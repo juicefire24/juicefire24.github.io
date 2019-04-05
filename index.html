@@ -1,55 +1,143 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-    </script>
+    <title> Weather Dasboard Visualization</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="web.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>>
+  
 
-  <meta charset="UTF-8">
-  <title> Weather Dasboard Visualization</title>
 </head>
 
 <body>
+  <!-- Navigation Section -->
+  <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Latitude</b></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="Plots">Plots <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li><a href="temperature.html">Max Temperature</a></li>
+              <li><a href="Humidity.html">Humidity</a></li>
+              <li><a href="Cloudiness.html">Cloudiness</a></li>
+              <li><a href="Windspeed.html">Wind Speed</a></li>
+               
+            </ul>
 
-  <h1>Hello there. My name is Jarrett Campbell</h1>
+        </li>
 
-  <img src="http://lorempixel.com/125/125/animals/3/cc" alt="Your Name">
+        <li><a href="Comparison.html"><b>Comparison</b></a></li>
 
-  <p>Write a short paragraph about yourself or some placeholder text.</p>
-  <p>A second short paragraph about yourself or some placeholder text.</p>
+        <li><a href="Data.html"><b>Data</b></a></li>
 
-  <ul>
-    <li><strong>Email:</strong> <a href="#">jarrett.jd1@gmail.com</a></li>
-    <li><strong>Github:</strong> <a href="#">juicefire24</a></li>
-    <li><strong>Twitter:</strong> <a href="#">coming soon</a></li>
-  </ul>
+        </ul>
 
-  <table>
-    <tr>
-      <th>Books</th>
-      <th>Movies</th>
-      <th>Games</th>
-    </tr>
-    <tr>
-      <td>The Hobbit</td>
-      <td>Hot Fuzz</td>
-      <td>Dark Souls</td>
-    </tr>
-    <tr>
-      <td>The Name of the Wind</td>
-      <td>The Avengers</td>
-      <td>The Last of Us</td>
-    </tr>
-    <tr>
-      <td>The Girl With All the Gifts</td>
-      <td>The Matrix</td>
-      <td>Dragon Age: Origins</td>
-    </tr>
-  </table>
+      </div>
+
+    </nav>
+  
+
+  <!-- Content Section -->
+  
+  <div class="container">
+    
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-8">
+        <!-- Left box  -->
+
+        <h1><strong>Summary: Latitude vs. X</strong></h1>
+
+
+          <a href="temperature.html">
+
+          
+         <img class="image" src = "resources/assets/fig1.png" ALIGN=left HSPACE=40 VSPACE=20/>  
+
+          <!-- <img src="Resources/assets/visualizations/Fig1.png" class="vizualization rounded float-left" alt="Max Temperature Graph"> -->
+
+        </a>
+
+        
+
+          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+            accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
+            500 cities.
+          </p>
+          
+<p>
+          After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+            Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
+            source data and visualizations created as part of the analysis, as well as explanations and descriptions of
+            any trends and correlations witnessed.</p>
+          <ul>
+
+              <li>Temperature (F) vs. Latitude</li>
+  
+              <li>Humidity (%) vs. Latitude</li>
+  
+              <li>Cloudiness (%) vs. Latitude</li>
+  
+              <li>Wind Speed (mph) vs. Latitude</li>
+
+          </ul>
+      <div class="col-md-12">
+        <!-- Right Box -->
+        <!-- <div class="box"> -->
+          <h5 class="title">Visualizations</h5>
+                </a>
+
+            </div>
+
+          
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-xs-12 col-sm-3 col-md-6">
+                <a href="max_temperature.html">
+                  <img class="image" src="resources/assets/fig1.png" alt="Max Temperature Graph" width="300"/>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-6">
+                <a href="Humidity.html">
+                  <img class="image" src="resources/assets/fig2.png" alt="Humidity Graph"width="300"/>
+                </a>
+              </div>
+            </div>
+
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-xs-12 col-sm-3 col-md-6">
+                <a href="Cloudiness.html">
+                  <img class="image" src="resources/assets/fig3.png" alt="Cloudiness Graph"width="300"/>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-6">
+                <a href="Wind_speed.html">
+                  <img class="image" src="resources/assets/fig4.png" alt="Wind Speed Graph"width="300"/>
+   
+                </a>
+
+                </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
 
 </body>
 
-</html
+</html>
