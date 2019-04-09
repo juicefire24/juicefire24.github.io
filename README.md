@@ -1,3 +1,3 @@
 #Weather dashboard with visualizations
 
-http://juicefire24.github.io
+http://juicefire24.github.io/
